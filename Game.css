@@ -3,11 +3,16 @@
     padding: 0;
 }
 body{
+    min-height: 100 dvh;
+    display: grid;
+    place-items: center;
     background-color: #548687;
     text-align: center;
 }
 .container{
-    height: 70vh;
+    height: 500px;
+    width: 5min(90vmin, 420px);
+    aspect-ratio: 1/1;
      display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -31,14 +36,14 @@ body{
     border-radius: 1rem;
     border: none;
     box-shadow: 0 0 1rem rgba(0,0,0,0.3);
-    font-size: 8vmin;
+    font-size:clamp(20px, 8vmin, 48px);
     color: #e80b0b;
 
 }
 .reset{
     margin-top: 2rem;
     padding: 1rem ;
-    font-size: 1.2rem;
+    font-size: 50px;
     border-radius: 1rem;
     background-color: #480ada;
     color: white;
